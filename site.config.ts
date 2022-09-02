@@ -9,17 +9,18 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'UX and Life / Phil Wornath',
+  domain: 'blog.philwornath.com',
+  author: 'Phil Wornath',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
-
+  description: 'Tales of the intersection between life and technology',
+  
+  
   // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
+  twitter: 'philwornath',
+  github: 'philffm',
+  linkedin: 'phw',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
