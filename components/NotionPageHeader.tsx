@@ -40,10 +40,12 @@ export const NotionPageHeader: React.FC<{
   if (navigationStyle === 'default') {
     return <Header block={block} />
   }
-
+  
   return (
     <header className='notion-header'>
       <div className='notion-nav-header'>
+        {/* <Link href="/">Back to home</Link> */}
+
         <Breadcrumbs block={block} rootOnly={true} />
 
         <div className='notion-nav-header-rhs breadcrumbs'>
