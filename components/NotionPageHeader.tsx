@@ -45,11 +45,23 @@ export const NotionPageHeader: React.FC<{
   return (
     <header className='notion-header'>
       <div className='notion-nav-header'>
-        {/* <Link href="/">Back to home</Link> */}
-
+        <components.PageLink
+          className={cs(styles.logoLink, 'notion-nav-link logo-link')}
+          href='/'
+        >
+          <div className={styles.logo}>
+            <img
+              src='/p.svg'
+              alt='logo'
+              className={styles.logoIcon}
+              width='32'
+              style={{ borderRadius: '12px' }}
+            />
+          </div>
+        </components.PageLink>
         <Breadcrumbs block={block} rootOnly={true} />
 
-        <div className='notion-nav-header-rhs breadcrumbs'>
+        <div className='notion-nav-header-rhs '>
           {navigationLinks
             ?.map((link, index) => {
               if (!link.pageId && !link.url) {

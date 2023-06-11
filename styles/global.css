@@ -13,6 +13,11 @@ html {
   margin: 0;
 }
 
+.breadcrumbs {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 body {
   --notion-font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
