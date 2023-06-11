@@ -22,6 +22,7 @@ export default siteConfig({
   twitter: 'philwornath',
   github: 'philffm',
   linkedin: 'phw',
+  mastodon: 'https://mastodon.online/@phw', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
