@@ -7,7 +7,8 @@ export default siteConfig({
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
-  includeNotionIdInUrls: true,
+  // includeNotionIdInUrls: true,
+  includeNotionIdInUrls: false,
 
   // basic site info (required)
   name: 'UX and Life / Phil Wornath',
