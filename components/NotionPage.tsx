@@ -27,6 +27,7 @@ import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
+import AnimatedElement  from './AnimatedElement'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
