@@ -21,6 +21,8 @@
 }
 .notion-collection-row-property .notion-property {
   flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .notion-page {
