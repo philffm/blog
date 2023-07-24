@@ -19,6 +19,9 @@
 .notion-row {
   align-items: center;
 }
+.notion-collection-row-property .notion-property {
+  flex-direction: column;
+}
 
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
