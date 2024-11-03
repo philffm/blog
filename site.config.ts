@@ -2,25 +2,28 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '7875426197cf461698809def95960ebf',
+  rootNotionPageId: '0aac38d9e5994f8aa7d586dec4c6883e',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
+  includeNotionIdInUrls: true,
+  // includeNotionIdInUrls: false,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  name: 'UX and Life / Phil Wornath',
+  domain: 'blog.philwornath.com',
+  author: 'Phil Wornath',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
-
+  description: 'Tales of the intersection between life and technology',
+  
+  
   // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
-  // mastodon: '#', // optional mastodon profile URL, provides link verification
+  twitter: 'philwornath',
+  github: 'philffm',
+  linkedin: 'phw',
+  mastodon: 'https://mastodon.online/@phw', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
@@ -49,6 +52,7 @@ export default siteConfig({
   pageUrlOverrides: null,
 
   // whether to use the default notion navigation style or a custom one with links to
+<<<<<<< HEAD
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
   navigationStyle: 'default'
   // navigationStyle: 'custom',
@@ -62,4 +66,15 @@ export default siteConfig({
   //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
   //   }
   // ]
+=======
+  // important pages
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'About',
+      pageId: 'e5e93260968742f9a859a68cfde19a91'
+    }
+  ]
+>>>>>>> migration
 })

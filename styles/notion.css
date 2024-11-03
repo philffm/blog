@@ -16,6 +16,15 @@
   padding: 0;
 }
 
+.notion-row {
+  align-items: center;
+}
+.notion-collection-row-property .notion-property {
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
 .notion-page {
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
@@ -44,9 +53,14 @@
 }
 
 .notion-header .notion-nav-header {
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
+<<<<<<< HEAD
   overflow-x: auto;
+=======
+  flex-direction: row;
+  /* justify-content: start; */
+>>>>>>> migration
 }
 
 .notion-nav-header-rhs {
@@ -57,6 +71,7 @@
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 6vmin;
   gap: 6vmin;
+  grid-auto-rows: 0fr;
 }
 
 .notion-gallery-grid .notion-page-icon-inline {
@@ -124,7 +139,7 @@
   line-height: 1.5;
   font-style: italic;
   font-size: 1.2em;
-  border-left: 4px solid #67bdfc;
+  border-left: 4px solid var(--notion-teal);
 }
 
 .notion-h1,
@@ -166,6 +181,23 @@
   margin-right: auto;
 }
 
+.notion-page-no-cover.notion-page-has-image-icon {
+  padding-top: 16px;
+}
+
+
+a.notion-nav-link.logo-link {
+  /* create a nice animation */
+  transition: all 0.2s ease-in-out;
+}
+/* subtly zoom and shadow when hovering */
+
+a.notion-nav-link.logo-link:hover {
+  transform: scale(1.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+
 .notion-title {
   display: block;
   text-align: center;
@@ -198,6 +230,13 @@
   border-radius: 24px;
 }
 
+
+.notion-page-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
 .notion-page-cover-wrapper {
   box-shadow: 2px 2px 8px 4px rgba(15, 15, 15, 0.1);
 }
@@ -341,14 +380,18 @@
 .dark-mode .notion-orange_background,
 .dark-mode .notion-brown_background,
 .dark-mode .notion-gray_background {
-  padding: 0;
+  padding: 2px;
   margin: 0;
-  border-radius: 0;
-  background: none !important;
+  /* border-radius: 0; */
+  /* background: none !important; */
+  /* background-image: none; */
+  background-image: linear-gradient(45deg,#41c4ab9c, var(--bg-color));
 }
 
 /* if you don't want rounded page icon images, remove this */
 .notion-page-icon-hero.notion-page-icon-image {
+  top: -120px;
+  z-index: 1000;
   border-radius: 50%;
   box-shadow: 0 8px 40px 0 rgb(0 0 0 / 21%);
 }
@@ -388,6 +431,7 @@
   display: none;
 }
 
+<<<<<<< HEAD
 .notion-search .searchBar {
   box-shadow: var(--fg-color-0) 0px 1px 0px;
 }
@@ -403,3 +447,49 @@
 .notion-equation.notion-equation-block{
   align-items: center;
 }
+=======
+.dark-mode {
+  --fg-color: rgba(255, 255, 255, 0.9);
+  --fg-color-0: var(--fg-color);
+  --fg-color-1: var(--fg-color);
+  --fg-color-2: var(--fg-color);
+  --fg-color-3: var(--fg-color);
+  --fg-color-4: var(--fg-color);
+  --fg-color-5: rgba(255, 255, 255, 0.7);
+  --fg-color-6: #fff;
+  --fg-color-icon: #fff;
+  --bg-color: #202123;
+  --bg-color-0: #263238; /* darker variant of base color */
+  --bg-color-1: #37474f; /* even darker */
+  --bg-color-2: rgba(135, 131, 120, 0.15);
+  --notion-red: #f44336; /* keeping original colors intact for better contrast */
+  --notion-pink: #e91e63;
+  --notion-blue: #2196f3;
+  --notion-purple: #9c27b0;
+  --notion-teal: #41C4AB; /* the magical accent color */
+  --notion-yellow: #ffeb3b;
+  --notion-orange: #ff5722;
+  --notion-brown: #795548;
+  --notion-gray: rgba(151, 154, 155, 0.95);
+  /* For backgrounds, we've kept a dark tone with a hint of the colors */
+  --notion-red_background: #452222;
+  --notion-pink_background: #452933;
+  --notion-blue_background: #243145;
+  --notion-purple_background: #342240;
+  --notion-teal_background: #213E3E; /* darker variant of accent */
+  --notion-yellow_background: #454530;
+  --notion-orange_background: #453C2A;
+  --notion-brown_background: #3F3C3C;
+  --notion-gray_background: #3F3F3F;
+  /* Co stands for "Complementary", these colors are lighter */
+  --notion-red_background_co: rgba(89, 33, 33, 0.3);
+  --notion-pink_background_co: rgba(73, 33, 52, 0.3);
+  --notion-blue_background_co: rgba(36, 49, 68, 0.3);
+  --notion-purple_background_co: rgba(52, 33, 64, 0.3);
+  --notion-teal_background_co: rgba(66, 196, 171, 0.3); /* lighter variant of accent */
+  --notion-yellow_background_co: rgba(71, 70, 46, 0.3);
+  --notion-orange_background_co: rgba(89, 74, 58, 0.3);
+  --notion-brown_background_co: rgba(67, 64, 64, 0.3);
+  --notion-gray_background_co: rgba(69, 75, 78, 0.3);
+}
+>>>>>>> migration

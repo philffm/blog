@@ -42,13 +42,27 @@ export function NotionPageHeader({
   if (navigationStyle === 'default') {
     return <Header block={block} />
   }
-
+  
   return (
     <header className='notion-header'>
       <div className='notion-nav-header'>
+        <components.PageLink
+          className={cs(styles.logoLink, 'notion-nav-link logo-link')}
+          href='/'
+        >
+          <div className={styles.logo}>
+            <img
+              src='/p.svg'
+              alt='logo'
+              className={styles.logoIcon}
+              width='32'
+              style={{ borderRadius: '12px' }}
+            />
+          </div>
+        </components.PageLink>
         <Breadcrumbs block={block} rootOnly={true} />
 
-        <div className='notion-nav-header-rhs breadcrumbs'>
+        <div className='notion-nav-header-rhs '>
           {navigationLinks
             ?.map((link, index) => {
               if (!link.pageId && !link.url) {
